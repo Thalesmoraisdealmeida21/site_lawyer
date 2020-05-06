@@ -1,0 +1,76 @@
+.containerFooter{
+
+  display: flex;
+  flex-direction: row;
+  
+  width: 100vw;
+  background: #4F202A;
+  height: 300px;
+  color: white;
+}
+
+.containerFooter h1{
+
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+.about{
+    margin-left: 24vw;
+    padding: ;
+    text-align: center;
+    width: 15vw;
+    
+
+}
+
+.contactInfo{
+  text-align: center;
+
+  width: 20vw;
+}
+
+
+.areasAtuacao h1{
+  margin-left: 35px;
+
+
+}
+
+.areasAtuacao li{
+  text-decoration: none;
+ 
+}
+
+.areasAtuacao ul{
+  list-style-type: none;
+}
+
+.areasAtuacao{
+  text-align: center;
+}
+@media (max-width: 1080px){
+  .containerFooter{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about{
+    width: 50vw;
+    margin-left: 26vw;
+  }
+
+  .contactInfo{
+    width: 80vw;
+    text-align: center;
+    margin-left: 11vw;
+  }
+
+  .areasAtuacao{
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+  }
+}

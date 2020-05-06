@@ -1,0 +1,396 @@
+.container{
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contactbar{
+  background-color: #4F202A;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 80px;
+
+}
+
+.contactbar .MiddleOfContacts{
+      padding: 10px;
+      width: 80vw;
+      padding: 10px;
+      width: 80vw;
+      display: block;
+
+      margin-left: 10vw;
+
+ 
+  }
+
+  .contactbar .MiddleOfContacts a{
+    color: white;
+    text-decoration: none;
+    
+  
+  }
+
+  .contactbar .MiddleOfContacts a:hover{
+    color: red;
+    transition: 1s;
+  
+  }
+
+  .contactbar .socialMedias{
+    text-align: right;
+    width: 60vw;
+    
+    margin-right: 10vw;
+  }
+
+
+
+  .btn-custom{
+    color: white;
+    border: 1px solid red;
+    padding: 6px;
+    
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .btn-custom:hover{
+      background-color: rgb(170, 41, 41);]
+      transition: 1s;
+  }  
+
+  nav{
+    transition: 1s;
+  }
+  
+  .navbartop{
+    background-color: #F8F9FA;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s;
+    position: fixed;
+    margin-top: 80px;
+    -webkit-box-shadow: 10px 6px 13px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: 10px 6px 13px -2px rgba(0,0,0,0.72);
+    box-shadow: 10px 6px 13px -2px rgba(0,0,0,0.72);
+
+  
+
+   
+  }
+
+  .nav-fixed{
+    margin-top: 0;
+    transition: 1s;
+    position: fixed;
+
+  }
+
+  .logo-container{
+    margin-left: 10vw;
+    padding: 20px;
+  }
+    .menuCollapse{
+      width: 100vw;
+      text-align: right;
+      margin-right: 20vw;
+      transition: visibility 1s linear w;
+  
+      
+    }
+
+
+    
+  .nav-ul{
+    list-style-type: none;
+    margin-top: 26px;
+    display: inline-flex;
+
+
+  }
+
+  .nav-ul li {
+     
+      padding: 10px;
+
+      
+  } 
+
+  .socialMediaContactBar{
+    margin-bottom: 3px;
+  }
+  .nav-ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .nav-ul li a:hover{
+    color: tomato;
+    transition: 0.5s;
+  }
+
+  .btn-toggle{
+    height: 50px;
+    width: 50px;
+    border: silver 1px solid;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    text-align: end;
+    margin-left: 35vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+
+
+  }
+
+  .line{
+    border: 2px solid black;
+    width: 25px;
+    height: 0;
+    padding: 0px;
+    margin-bottom: 6px;
+    
+  }
+
+  
+.showMenu{
+    visibility: visible;
+
+    transition: height 1s;
+ 
+}
+
+.menuFixo{
+  position: fixed;
+}
+
+.hiddenMenu{
+    visibility: visible;
+}
+
+.welcome{
+  background-image: url('./../../assets/background-welcome.png');
+  background-size: cover;
+  height: 28vw;
+  font-family: Oxygen;
+  display: flex;
+
+  flex-direction: row;
+
+  color: white;
+}
+
+.imgPriRecortada{
+
+    width: 1000px;
+    height: 700px;
+  
+
+}
+.welcome .textWelcomeContainer{
+  margin: auto;
+  margin-top: 2vh;
+  text-align: left;
+  width: 40vw;
+}
+
+.welcome .textWelcomeContainer h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+.welcome .textWelcomeContainer p{
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.btn-about-more{
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.5s;
+  margin-top: 20px;
+  border: transparent;
+  font-size: 1.7em;
+  background: orange;
+}
+
+
+
+  @media (max-width: 1300px){
+    .hiddenMenu{
+      visibility: hidden;
+  }
+
+     .imgPriRecortada{
+      display: none;
+      width: 0px;
+    }
+
+  .welcome{
+    font-size: 1em;
+    width: 100vw;
+    margin-left: 0;
+    height: 100vw;
+    
+  }
+
+  .welcome .textWelcomeContainer{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .btn-about-more
+  {
+   width: 80vw;
+   margin-left: 10vw;
+  }
+
+  .welcome .textWelcomeContainer  h1{
+    font-size: 4em;
+    width: 100vw;
+  }
+  .welcome .textWelcomeContainer  p{
+    font-size: 1.5em;
+    width: 100vw;
+    margin-left: auto;
+  }
+    .contactbar{
+      height: 100px;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .contactbar .MiddleOfContacts{
+      text-align: center;
+    }
+
+    .contactbar .socialMedias {
+      text-align: center; 
+      width: 100vw;
+   
+
+  }
+
+    .socialMediaContactBar{
+      display: none;
+    }
+
+    .btn-toggle{
+      display: flex;
+    
+      
+      margin-left: auto;
+      margin-right: 10vw;
+    }
+
+
+    .nav-ul{
+        display: flex;
+        flex-direction: column;
+     
+        margin-top: 5vw;
+        
+    }
+
+
+    .menuCollapse{
+      
+      display: flex;
+      flex-direction: column;
+      margin-top: 107px;
+      width: 100vw;
+      background: #F8F9FA;
+      border: 1px black solid;
+      text-align: center;
+      position: absolute;
+      height: 1s;
+    }
+  }
+
+
+  @media (max-width: 900px){
+
+   
+  
+
+    .MiddleOfContacts{
+      padding: 0px;
+    }
+
+    .container{
+      font-size: 0.8em;
+    }
+
+    .logo-container{
+      margin-left: 0  ;
+    }
+     
+  
+   
+  }
+
+  .areasLink{
+
+    cursor: pointer;
+
+  }
+
+  @media (max-width: 520px){
+    .endereco{
+      display: none;
+    }
+
+    .welcome .textWelcomeContainer  h1{
+      font-size: 3em;
+      width: 100vw;
+    }
+    .welcome .textWelcomeContainer  p{
+      font-size: 1.2em;
+      width: 100vw;
+      margin-left: auto;
+    }
+
+
+
+
+  }
+
+  @media (max-width: 1800px){
+
+    .welcome{
+      margin-left: 0;
+    }
+
+
+    .imgPriRecortada{
+      height: 400px;
+      width: 600px;
+    }
+
+    .welcome .textWelcomeContainer  h1{
+      font-size: 4em;
+      width: 80vw; 
+      font-size: 3em;
+        
+    }
+    
+
+    img{
+   
+    }
+  }
+
+ 

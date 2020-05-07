@@ -7,6 +7,7 @@
   background: #4F202A;
   height: 300px;
   color: white;
+  margin-top: 20vw;
 }
 
 .containerFooter h1{
@@ -33,7 +34,7 @@
 
 
 .areasAtuacao h1{
-  margin-left: 35px;
+  margin-left: 10vw;
 
 
 }
@@ -47,9 +48,7 @@
   list-style-type: none;
 }
 
-.areasAtuacao{
-  text-align: center;
-}
+
 @media (max-width: 1080px){
   .containerFooter{
     display: flex;
@@ -70,7 +69,12 @@
 
   .areasAtuacao{
     width: 80vw;
+    text-align: justify;
+    margin-left: 8vw;
+  }
+
+  .areasAtuacao ul{
     text-align: center;
-    margin-left: 10vw;
+    margin-right: 3vw;
   }
 }

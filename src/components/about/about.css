@@ -7,6 +7,7 @@
   width: 100%; 
 
 
+
 }
 
 
@@ -14,7 +15,7 @@
 
 .contentAbout{
   margin-top: 30px;
-  margin-right: 10vw;
+ 
   text-align: left;
 }
 .btn-About-contact{
@@ -32,7 +33,6 @@
 .btn-About-contact:hover{
   background-color: #B43724;
 }
-
 
 
 @media (max-width:  1080px){
@@ -66,4 +66,13 @@
     }
 
 
+}
+
+
+@media (max-width:  600px){
+  .imgContainer img{
+    width: 90vw;
+    height: 71vw;
+    margin-left: 10vw;
+    }
 }

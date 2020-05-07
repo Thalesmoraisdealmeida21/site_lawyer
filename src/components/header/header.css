@@ -186,6 +186,7 @@
   height: 28vw;
   font-family: Oxygen;
   display: flex;
+  margin-top: 80px;
 
   flex-direction: row;
 
@@ -314,9 +315,10 @@
       width: 100vw;
       background: #F8F9FA;
       border: 1px black solid;
-      text-align: center;
+      text-align: left;
       position: absolute;
-      height: 1s;
+     
+
     }
   }
 
@@ -355,6 +357,7 @@
 
     .welcome .textWelcomeContainer  h1{
       font-size: 3em;
+      text-align: center;
       width: 100vw;
     }
     .welcome .textWelcomeContainer  p{
@@ -382,7 +385,8 @@
 
     .welcome .textWelcomeContainer  h1{
       font-size: 4em;
-      width: 80vw; 
+      width: 100vw;
+     
       font-size: 3em;
         
     }

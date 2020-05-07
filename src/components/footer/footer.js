@@ -39,7 +39,7 @@ export default function(){
             <li>Direito Previdenciario</li>
             <li>Direito do Consumidor</li>
             <li>Indenizatórios e Cobranças </li>
-            <li>Invetários</li>
+            <li>Inventários</li>
            
         
           </ul>

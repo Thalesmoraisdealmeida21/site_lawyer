@@ -17,59 +17,47 @@ export default function(){
 
 
       <div className="containerAreas">
-        <div className="grid">
 
-    
-
-          <div className="itemGrid">
-            <a href="">
-              <img src={DireitoPrevidenciario} alt=""/>
-              <div className="backgroundContainer"></div>
-              <h2>Direito Previdenciario</h2>      
-            </a>
-          </div>
-
-          <div className="itemGrid">
-            <a href="">
-              <img src={DireitoFamilia} alt=""/>
-              <div className="backgroundContainer"></div>
-              <h2>Direito de Familia</h2>      
-            </a>
-          </div>
+        <div className="row">
+              <div className="card">
+                  <img src={DireitoPrevidenciario} alt=""/>
+                  <h2>Direito Previdenciário</h2>
+                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+              </div>
 
 
-          <div className="itemGrid">
-            <a href="">
-              <img src={DireitoInventario} alt=""/>
-              <div className="backgroundContainer"></div>
-              <h2>Inventarios</h2>      
-            </a>
-          </div>
+              <div className="card">
+                  <img src={DireitoFamilia} alt=""/>
+                  <h2>Direito de Familia</h2>
+                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+              </div>
 
-          <div className="itemGrid">
-            <a href="">
-              <img src={DireitoIndenizatorio} alt=""/>
-              <div className="backgroundContainer"></div>
-              <h2>Indenizatórios e Cobranças</h2>      
-            </a>
-          </div>
+              <div className="card">
+                  <img src={DireitoInventario} alt=""/>
+                  <h2>Inventários </h2>
+                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+              </div>
+        </div>
 
-          <div className="itemGrid">
-            <a href="">
-              <img src={DireitoConsumidor} alt=""/>
-              <div className="backgroundContainer"></div>
-              <h2>Direito do Consumidor</h2>      
-            </a>
-          </div>
+        <div className="row">
+              <div className="card">
+                  <img src={DireitoIndenizatorio} alt=""/>
+                  <h2>Direito Indenizatório</h2>
+                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+              </div>
 
-          <div className="itemGrid">
-            <a href="">
-              <img src={DireitoCivil} alt=""/>
-              <div className="backgroundContainer"></div>
-              <h2>Direito Civil</h2>      
-            </a>
-          </div>
 
+              <div className="card">
+                  <img src={DireitoConsumidor} alt=""/>
+                  <h2>Direito do Consumidor</h2>
+                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+              </div>
+
+              <div className="card">
+                  <img src={DireitoCivil} alt=""/>
+                  <h2>Direito Civil</h2>
+                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+              </div>
         </div>
 
       </div>

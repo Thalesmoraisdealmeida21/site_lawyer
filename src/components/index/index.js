@@ -3,6 +3,7 @@ import Header from '../header/header'
 import Areas from '../areas-atuacao/areas-atuacao'
 import About from '../about/about'
 import Footer from '../footer/footer'
+import Contact from '../contact/contact'
 export default function (){
 
 
@@ -22,6 +23,10 @@ export default function (){
       <About></About>
       </div>
 
+
+      <div id="contato">
+          <Contact></Contact>
+      </div>
       <Footer></Footer>
       
     </div>

@@ -1,0 +1,130 @@
+.containerContact{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100vw;
+}
+
+
+.containerForm{
+  padding: 10px;
+  width: 30%;
+  margin-left: 10vw;
+
+}
+
+.containerForm .formGroup{
+    width: 100%;
+}
+
+.containerForm .formGroup input{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: transparent;
+    outline: 0;
+    transition: 0.6s;
+    font-family: Roboto;
+  font-size: 18px;
+  font-weight: medium;
+
+}
+
+.btnSubmit{
+  height: 40px;
+  background: #4F202A;
+  color: white;
+  border: transparent;
+  transition: 0.5s;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 2vw;
+  width: 28vw;
+ 
+}
+
+.btnSubmit:hover{
+  height: 40px;
+  background: #B43724;
+  color: white;
+  border: transparent;
+}
+
+.containerForm .formGroup textarea{
+  width: 100%;
+
+  margin: 10px;
+  padding: 10px;
+  background: #FCFCFC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: transparent;
+  outline: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: medium;
+  transition: 0.7s;
+
+
+}
+
+.containerForm .formGroup input:hover{
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerForm .formGroup input:active{
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerForm .formGroup input:focus{
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerForm .formGroup textarea:hover{
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerForm .formGroup textarea:active{
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerForm .formGroup textarea:focus{
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.infoContacts{
+  margin-left: 10vw;
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (max-width: 1100px){
+  .containerContact{
+    flex-direction: column;
+    margin-top: 10vh;
+    
+  }
+
+  .containerForm{
+    width: 70vw;
+    margin-left: 15px;
+  }
+
+  .infoContacts{
+    width: 80%;
+  }
+
+  .btnSubmit{
+    width: 77vw;
+  }
+}

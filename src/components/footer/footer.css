@@ -7,7 +7,7 @@
   background: #4F202A;
   height: 300px;
   color: white;
-  margin-top: 20vw;
+  margin-top: 3vw;
 }
 
 .containerFooter h1{
@@ -33,11 +33,7 @@
 }
 
 
-.areasAtuacao h1{
-  margin-left: 10vw;
 
-
-}
 
 .areasAtuacao li{
   text-decoration: none;

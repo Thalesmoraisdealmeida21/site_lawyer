@@ -39,6 +39,7 @@ export default function(){
         .querySelector(elementScroll)
           .offsetTop,       // 2
           left: 0,
+
           behavior: 'smooth'// 3
        });
   }
@@ -128,7 +129,7 @@ export default function(){
              
 
                   <li>
-                      <a className="areasLink">Contato</a>
+                      <a className="areasLink" onClick={()=>toPageScroll('contato')}>Contato</a>
                   </li>
 
                   <li>

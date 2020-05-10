@@ -55,9 +55,17 @@ export default function(){
                 <br/>
 
                 <div className="icons">
-                    <FaLinkedin size={30}></FaLinkedin>
+                  <a href="https://www.linkedin.com/in/priscila-morais-de-almeida-14486087/" target="__blank">
+                      <FaLinkedin size={30}></FaLinkedin>
+                  </a>
+                    <a href="https://www.instagram.com/priscilamorais.adv/" target="__blank">
                     <FaInstagram size={30}></FaInstagram>
+                    </a>
+                    <a href="https://www.facebook.com/advogadapriscilamorais" target="__blank">
+
                     <FaFacebook size={30}></FaFacebook>
+                    </a>
+                   
                 </div>
 
                 <label htmlFor="">

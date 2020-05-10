@@ -11,14 +11,17 @@ export default function(){
     <div className="">
 
       <Header></Header>
-
+      <div className="page-header">
+            <span>Blog</span>
+      </div>
       <div className="containerBlog">
-
+   
+         
           <div className="postItem">
                 <img src={imagemaleatoria} height="300vh" alt=""/>
 
                 <div className="infoPost">
-                    <h1>Este é o primeiro post que estou colocando aqui aleatoriamente</h1>
+                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
                       leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
@@ -26,7 +29,97 @@ export default function(){
                        Suspendisse 
                        </p>
 
-                       <Link> <span>Saiba Mais</span> <FaArrowRight></FaArrowRight> </Link>
+                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
+                </div>
+          </div>
+
+
+             
+          <div className="postItem">
+                <img src={imagemaleatoria} height="300vh" alt=""/>
+
+                <div className="infoPost">
+                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
+                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
+                      purus eu tellus.
+                       Suspendisse 
+                       </p>
+
+                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
+                </div>
+          </div>
+
+
+             
+          <div className="postItem">
+                <img src={imagemaleatoria} height="300vh" alt=""/>
+
+                <div className="infoPost">
+                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
+                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
+                      purus eu tellus.
+                       Suspendisse 
+                       </p>
+
+                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
+                </div>
+          </div>
+
+
+             
+          <div className="postItem">
+                <img src={imagemaleatoria} height="300vh" alt=""/>
+
+                <div className="infoPost">
+                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
+                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
+                      purus eu tellus.
+                       Suspendisse 
+                       </p>
+
+                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
+                </div>
+          </div>
+
+
+             
+          <div className="postItem">
+                <img src={imagemaleatoria} height="300vh" alt=""/>
+
+                <div className="infoPost">
+                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
+                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
+                      purus eu tellus.
+                       Suspendisse 
+                       </p>
+
+                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
+                </div>
+          </div>
+
+
+             
+          <div className="postItem">
+                <img src={imagemaleatoria} height="300vh" alt=""/>
+
+                <div className="infoPost">
+                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
+                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
+                      purus eu tellus.
+                       Suspendisse 
+                       </p>
+
+                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
                 </div>
           </div>
 

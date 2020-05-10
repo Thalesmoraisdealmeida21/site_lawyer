@@ -42,8 +42,8 @@
   align-items: center;
   border-radius: 5px;
   text-align: center;
-  margin-left: 2vw;
-  width: 28vw;
+  margin-left: 9px;
+  width: 100%;
  
 }
 
@@ -102,6 +102,15 @@
   flex-direction: column;
 }
 
+a{
+  color: #4F202A;
+  transition: 0.7s;
+}
+
+a:hover{
+  color: #AA2929;
+}
+
 .icons{
   display: flex;
   flex-direction: row;
@@ -117,7 +126,8 @@
 
   .containerForm{
     width: 70vw;
-    margin-left: 15px;
+    margin-left: 12vw;
+    margin-top: 40px;
   }
 
   .infoContacts{
@@ -125,6 +135,6 @@
   }
 
   .btnSubmit{
-    width: 77vw;
+    width: 100%;
   }
 }

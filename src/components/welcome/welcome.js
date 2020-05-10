@@ -5,6 +5,18 @@ import priRecortada from './../../assets/PriRecortada.png'
 
 export default function(){
 
+
+  function goToAbout(){
+      window.scroll({       // 1
+        top: document
+      .querySelector('#sobre')
+        .offsetTop,       // 2
+        left: 0,
+
+        behavior: 'smooth'// 3
+    });
+  }
+
   return(
     <div className="welcome">
 
@@ -18,7 +30,7 @@ export default function(){
         
 
         </p>
-                  <button className="btn-custom btn-about-more">Saiba Mais</button>
+                  <button onClick={goToAbout} className="btn-custom btn-about-more">Saiba Mais</button>
         
 
 

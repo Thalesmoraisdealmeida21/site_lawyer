@@ -2,7 +2,15 @@ import React from 'react'
 import imgAbout from './../../assets/pri-about.png'
 
 import './about.css'
+import { useEffect } from 'react'
 export default function(){
+
+  function toContact(){
+    let coord = document.querySelector('#sobre').getBoundingClientRect();
+    console.log(coord)
+    window.scrollTo(0, window.scrollY + coord.y)
+  }
+
 
   return(
     <div className="">
@@ -21,7 +29,7 @@ export default function(){
             Sempre voltada para as necessidades do cliente, visando alcançar os melhores resultados, buscando soluções harmônicas e especializadas para cada caso.
           </p>
 
-          <button className="btn-About-contact">Entre em Contato</button>
+          <button onClick={toContact} className="btn-About-contact">Entre em Contato</button>
         </div>
       </div>
 

@@ -8,6 +8,10 @@
 }
 
 
+a{
+  text-decoration: none;
+}
+
 .page-header{
   margin-top: 20vh;
   text-align: center;
@@ -30,8 +34,11 @@
 }
 .postItem .infoPost strong{
   font-size: 2rem;
+  color: #4F202A;
 
 }
+
+
 
 .postItem img{
   width:400px;

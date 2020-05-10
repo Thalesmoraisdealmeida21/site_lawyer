@@ -1,12 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {FaArrowRight }from 'react-icons/fa'
-
-import { Link } from 'react-router-dom'
 
 import imagemaleatoria from './../../../assets/DireitoInventario.jpeg'
 import Header from './../../header/header'
 import './listpost.css'
+import { Link } from 'react-router-dom'
 export default function(){
+
+
+  useEffect(()=>{
+      if(document.location.pathname === '/blog'){
+            window.scrollTo(0, 0);
+      } 
+  })
+
   return(
     <div className="">
 
@@ -29,7 +36,7 @@ export default function(){
                        Suspendisse 
                        </p>
 
-                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
+                        <Link to={'/blog/publicacao/1'} href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </Link> 
                 </div>
           </div>
 

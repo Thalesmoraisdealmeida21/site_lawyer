@@ -4,6 +4,7 @@ import Areas from '../areas-atuacao/areas-atuacao'
 import About from '../about/about'
 import Footer from '../footer/footer'
 import Contact from '../contact/contact'
+import Welcome from '../welcome/welcome'
 export default function (){
 
 
@@ -14,6 +15,10 @@ export default function (){
     <div className="containerIndex"> 
       <div id="home">
           <Header></Header>
+       </div>
+
+       <div id="welcome">
+         <Welcome></Welcome>
        </div>
       
        <div id="areas">

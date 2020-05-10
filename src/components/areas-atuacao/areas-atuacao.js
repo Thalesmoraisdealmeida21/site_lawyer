@@ -32,7 +32,7 @@ export default function(){
 
               <div className="card">
                   <img src={DireitoFamilia} alt=""/>
-                  <h2>Direito de Familia</h2>
+                  <h2>Direito de Familia e Sucessões</h2>
                   <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
                   <a target="__blank" href="https://api.whatsapp.com/send?phone=5555996753805&text=Ola%2C%20preciso%20de%20ajuda%20com%20uma%20situa%C3%A7%C3%A3o%20de%20Direito%20de%20Fam%C3%ADlia.%20Pode%20me%20ajudar%20%3F" className="btn-about btn-custom"> Entre em Contato </a>
           
@@ -40,7 +40,7 @@ export default function(){
 
               <div className="card">
                   <img src={DireitoInventario} alt=""/>
-                  <h2>Inventários </h2>
+                  <h2>Correspondência Jurídica </h2>
                   <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
                   <a target="__blank" href="https://api.whatsapp.com/send?phone=5555996753805&text=Ola%2C%20preciso%20de%20ajuda%20com%20um%20invent%C3%A1rio.%20Pode%20me%20ajudar%20%3F" className="btn-about btn-custom"> Entre em Contato </a>
           

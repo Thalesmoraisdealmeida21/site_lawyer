@@ -16,7 +16,7 @@ export default function(){
         <div className="contentAbout">
           <h1>Quem é Priscila Morais de Almeida ?</h1>
           <p>
-            Advogada a 7 anos prestando serviços de advocacia com excelência, especializada 
+            Advogada com mais de sete anos de experiência, prestando serviços de advocacia com excelência, especializada 
             e humanizada, atuando com responsabilidade, comprometimento, qualidade e competência, pautada na ética profissional.
             Sempre voltada para as necessidades do cliente, visando alcançar os melhores resultados, buscando soluções harmônicas e especializadas para cada caso.
           </p>

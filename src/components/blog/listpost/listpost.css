@@ -1,0 +1,18 @@
+.containerBlog{
+      width: 100vw;
+      display: flex;
+
+
+}
+
+
+.postItem{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.infoPost{
+  display: flex;
+  flex-direction: column;
+}

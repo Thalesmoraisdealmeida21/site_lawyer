@@ -1,17 +1,48 @@
 import React, {useState, useEffect} from 'react'
+import { Link, useLocation, useHistory } from 'react-router-dom'
 import { FaPhone, FaEnvelope, FaLinkedin, FaFacebook, FaInstagram, FaMapMarked } from 'react-icons/fa'
+
 import './header.css'
 
 import logo from './../../assets/logo.png'
-import priRecortada from './../../assets/PriRecortada.png'
 
 export default function(){
+   const locationRouter =  useLocation();
+   const navigator = useHistory();
+
+
+
+   function toPageScroll(page){
+    let elementScroll = '#' + page
+
+    if(locationRouter.pathname !== '/'){
+        navigator.push('/', {page});
+    } else {
+      window.scroll({       // 1
+        top: document
+      .querySelector(elementScroll)
+        .offsetTop,       // 2
+        left: 0,
+ 
+        behavior: 'smooth'// 3
+     });
+    }
+   
+
+  
+    
+
+
+   
+  }
 
   const [menuStatus, setMenuStatus] = useState("menuCollapse hiddenMenu");
   const [menuUlStatus, setMenuUlStatus] = useState("nav-ul hiddenMenu");
   const [navPosition, setNavPosition] = useState('navbartop')
+ 
+
   function showMenu(){
-    if(menuStatus == "menuCollapse hiddenMenu"){
+    if(menuStatus === "menuCollapse hiddenMenu"){
       setMenuStatus("menuCollapse showMenu");
       setMenuUlStatus("nav-ul showMenu")
     } else {
@@ -20,9 +51,26 @@ export default function(){
     }
    
   }
+ 
+
+
 
   useEffect(()=>{
+
+      if(locationRouter.state){
+
+        let elementScroll = "#" + locationRouter.state.page
+        window.scroll({       // 1
+          top: document
+        .querySelector(elementScroll)
+          .offsetTop,       // 2
+          left: 0,
+   
+          behavior: 'smooth'// 3
+       });
+      }
       window.onscroll = () =>{
+       
         if(window.scrollY > 2){
             setNavPosition('navbartop nav-fixed')
         } else {
@@ -31,18 +79,7 @@ export default function(){
       }
   })
 
-  function toPageScroll(page){
-        let elementScroll = "#"+ page
-
-        window.scroll({       // 1
-          top: document
-        .querySelector(elementScroll)
-          .offsetTop,       // 2
-          left: 0,
-
-          behavior: 'smooth'// 3
-       });
-  }
+ 
 
 
 
@@ -70,15 +107,15 @@ export default function(){
 
             <div className="socialMedias">
               <div className="socialMediaContactBar">
-                  <a href="#" className="linkSocial">
+                  <a href="https://www.linkedin.com/in/priscila-morais-de-almeida-14486087/" target="__blank" className="linkSocial">
                   <FaLinkedin className="socialMediaContactBar" color={"white"} size={26}></FaLinkedin>
                   </a>
 
-                  <a href="#" className="linkSocial">
+                  <a href="https://www.facebook.com/advogadapriscilamorais" target="__blank" className="linkSocial">
                     <FaFacebook className="socialMediaContactBar" color={"white"} size={26}></FaFacebook>
                   </a>
                   
-                  <a href="" className="linkSocial">
+                  <a href="https://www.instagram.com/priscilamorais.adv/"  target="__blank" className="linkSocial">
                      <FaInstagram className="socialMediaContactBar" color={"white"} size={26}></FaInstagram>
                   </a>
 
@@ -115,7 +152,7 @@ export default function(){
             <div className={menuStatus}>
                 <ul className={menuUlStatus}>
                   <li>
-                     <a onClick={()=>toPageScroll('home')} className="areasLink">Inicio</a>
+                     <a href="#" onClick={()=>toPageScroll('home')} className="areasLink">Inicio</a>
                   </li>
 
                   <li>
@@ -133,7 +170,7 @@ export default function(){
                   </li>
 
                   <li>
-                      <a className="areasLink" >Blog</a>
+                      <Link to="/blog" className="areasLink" >Blog</Link>
                   </li>
                 </ul>
             </div>
@@ -144,27 +181,7 @@ export default function(){
         </nav>
 
 
-        <div className="welcome">
-
-
-              <div className="textWelcomeContainer">
-                <h1>Priscila Morais de Almeida</h1>
-                <p>
-                  Advogada dedicada em atender seus clientes com excelência e de forma descomplicada.
-                  Especialista em direito civil, das famílias
-                  e sucessões e em direito previdenciário.
-                  
-            
-                   </p>
-                   <a href="#">
-                    <button className="btn-custom btn-about-more">Saiba Mais</button>
-                   </a>
       
-
-              </div>
-
-              <img src={priRecortada} className="imgPriRecortada" alt=""/>
-        </div>
       </div>
 
       

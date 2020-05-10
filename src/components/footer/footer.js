@@ -22,7 +22,7 @@ export default function(){
           <h1>Informações de Contato</h1>
           <p>
             <FaPhone></FaPhone> Telefone: (55) 9 96753805 <br />
-            <FaEnvelope></FaEnvelope> E-mail: pmorais@hotmail.com <br />
+            <FaEnvelope></FaEnvelope> E-mail: pmorais.almeida@gmail.com <br />
             <br /> 
             <a className="btn-custom" href="https://api.whatsapp.com/send?phone=5555996753805&text=Ola%2C%20eu%20preciso%20de%20uma%20advogada%2C%20pode%20me%20ajudar">Chamar no Whatsapp</a>
               

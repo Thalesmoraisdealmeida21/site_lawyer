@@ -49,7 +49,7 @@ export default function(){
 
                 <label htmlFor="">
                   <strong>E-mail</strong>
-                  <span>pmorais@hotmail.com</span>
+                  <span>pmorais.almeida@gmail.com</span>
                 </label>
 
                 <br/>
@@ -65,7 +65,7 @@ export default function(){
                   <span> Avenida Senador Pinheiro Machado, n 3000, Sala 02, São Luiz Gonzaga - RS</span>
                 </label>
                   <br/><br/>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7018.727503546033!2d-54.953942!3d-28.408279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cf54f83f86c6f2e!2sPriscila%20Morais%20de%20Almeida%20-%20Advogada!5e0!3m2!1spt-BR!2sbr!4v1589050101122!5m2!1spt-BR!2sbr" width="100%" height="250vh" frameborder="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7018.727503546033!2d-54.953942!3d-28.408279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cf54f83f86c6f2e!2sPriscila%20Morais%20de%20Almeida%20-%20Advogada!5e0!3m2!1spt-BR!2sbr!4v1589050101122!5m2!1spt-BR!2sbr" width="100%" height="250vh"></iframe>
 
             </div>
 

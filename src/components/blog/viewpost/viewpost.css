@@ -18,3 +18,25 @@
   margin-top: 70px;
   font-family: Playfair;
 }
+
+@media (max-width: 1000px){
+  .HeaderPost h1{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20px;
+  }
+}
+
+.seeMore{
+  background: #4F202A;
+  font-size: 1rem;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  border: transparent;
+ 
+}

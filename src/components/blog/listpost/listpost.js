@@ -1,18 +1,45 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {FaArrowRight }from 'react-icons/fa'
 
 import imagemaleatoria from './../../../assets/DireitoInventario.jpeg'
 import Header from './../../header/header'
+import Footer from './../../footer/footer'
+import Loader from './../../../assets/loader.svg'
+
+import api  from './../../../service/api'
 import './listpost.css'
 import { Link } from 'react-router-dom'
 export default function(){
 
+      const [posts, setPosts] = useState([])
+      const [page, setPage] = useState(1);
+      const [statusLoading, setStatusLoading] = useState(true);
+
+      async function getAllPosts(){
+            const url = "posts/" + page
+            setStatusLoading(true)
+     
+            const  response = await api.get(url).then((retPosts)=>{
+                  if(retPosts.data){
+                        setPosts([...posts, ... retPosts.data])
+                        setStatusLoading(false);
+                        setPage(page + 1)
+                  }
+                  
+                 
+            })    
+
+
+
+
+      }
+
+
 
   useEffect(()=>{
-      if(document.location.pathname === '/blog'){
-            window.scrollTo(0, 0);
-      } 
-  })
+      setStatusLoading(true)
+      getAllPosts();
+  }, [])
 
   return(
     <div className="">
@@ -23,117 +50,43 @@ export default function(){
       </div>
       <div className="containerBlog">
    
-         
-          <div className="postItem">
-                <img src={imagemaleatoria} height="300vh" alt=""/>
 
-                <div className="infoPost">
-                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
+            {posts.map(post => (
+                  <div className="postItem">
+                  <img src={imagemaleatoria} height="300vh" alt=""/>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
-                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
-                      purus eu tellus.
-                       Suspendisse 
-                       </p>
+                  <div className="infoPost">
+                         <strong>{post.titulo}</strong>
 
-                        <Link to={'/blog/publicacao/1'} href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </Link> 
-                </div>
-          </div>
+                        <p dangerouslySetInnerHTML={{__html: post.descricao}}>
+                            
+                        </p>
 
+                        <Link to={'/blog/publicacao/'} href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </Link> 
+                  </div>
+                  </div>
 
-             
-          <div className="postItem">
-                <img src={imagemaleatoria} height="300vh" alt=""/>
+            ))}   
+              {!statusLoading &&
+                 <button onClick={ getAllPosts} className="seeMore">Ver Mais</button>
+               }
 
-                <div className="infoPost">
-                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
-                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
-                      purus eu tellus.
-                       Suspendisse 
-                       </p>
-
-                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
-                </div>
-          </div>
-
-
-             
-          <div className="postItem">
-                <img src={imagemaleatoria} height="300vh" alt=""/>
-
-                <div className="infoPost">
-                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
-                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
-                      purus eu tellus.
-                       Suspendisse 
-                       </p>
-
-                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
-                </div>
-          </div>
-
-
-             
-          <div className="postItem">
-                <img src={imagemaleatoria} height="300vh" alt=""/>
-
-                <div className="infoPost">
-                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
-                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
-                      purus eu tellus.
-                       Suspendisse 
-                       </p>
-
-                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
-                </div>
-          </div>
-
-
-             
-          <div className="postItem">
-                <img src={imagemaleatoria} height="300vh" alt=""/>
-
-                <div className="infoPost">
-                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
-                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
-                      purus eu tellus.
-                       Suspendisse 
-                       </p>
-
-                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
-                </div>
-          </div>
-
-
-             
-          <div className="postItem">
-                <img src={imagemaleatoria} height="300vh" alt=""/>
-
-                <div className="infoPost">
-                    <strong>Este é o primeiro post que estou colocando aqui aleatoriamente</strong>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, 
-                      leo non fermentum tristique, augue enim aliquet nibh, eget porta libero 
-                      purus eu tellus.
-                       Suspendisse 
-                       </p>
-
-                        <a href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </a> 
-                </div>
-          </div>
-
+              {statusLoading &&
+                 <img className="loading" src={Loader} alt=""/>
+               }
+                   
+               
+                
+                
+       
+                
 
       </div>
 
-
+                  <Footer></Footer>
     </div>
+
+    
+   
   )
 }

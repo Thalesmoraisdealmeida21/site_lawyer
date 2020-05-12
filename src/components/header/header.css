@@ -61,6 +61,7 @@
   .btn-custom:hover{
       background-color: rgb(170, 41, 41);]
       transition: 1s;
+      color: white
   }  
 
   nav{

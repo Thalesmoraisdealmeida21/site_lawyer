@@ -7,6 +7,28 @@
     width: 100%;
     height: 250px;
 }
+.HeaderPost{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.HeaderPost img{
+    
+    height: 300px;
+    width: 59vw;
+
+}
+
+
+
+.pageTitle{
+  padding: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-size: 3em;
+}
+
 
 .HeaderPost h1{
   color: white;
@@ -40,3 +62,22 @@
   border: transparent;
  
 }
+
+
+@media (max-width: 1000px){
+  .pageTitle{
+      font-size: 1.6em;
+      padding: 10px;
+    
+    }
+
+    .HeaderPost {
+      margin-left: 10vw;
+      margin-right: 0;
+    }
+    .HeaderPost img{
+      height: 60vw;
+      width: 90%;
+    }
+    
+  }

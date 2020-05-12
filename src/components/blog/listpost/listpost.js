@@ -14,24 +14,28 @@ export default function(){
       const [posts, setPosts] = useState([])
       const [page, setPage] = useState(1);
       const [statusLoading, setStatusLoading] = useState(true);
+      const [endOfPageStatus, setEndOfPage] = useState(false);
 
       async function getAllPosts(){
             const url = "posts/" + page
             setStatusLoading(true)
      
             const  response = await api.get(url).then((retPosts)=>{
-                  if(retPosts.data){
+
+                  if(retPosts.data.length > 0){
                         setPosts([...posts, ... retPosts.data])
                         setStatusLoading(false);
                         setPage(page + 1)
+                  } else {
+                       setEndOfPage(true);
+                       setStatusLoading(false)
                   }
+
                   
                  
             })    
 
-
-
-
+            
       }
 
 
@@ -53,28 +57,33 @@ export default function(){
 
             {posts.map(post => (
                   <div className="postItem">
-                  <img src={imagemaleatoria} height="300vh" alt=""/>
+                  <img src={post.imgCapa} height="300vh" alt="Sem Imagem"/>
 
                   <div className="infoPost">
                          <strong>{post.titulo}</strong>
 
-                        <p dangerouslySetInnerHTML={{__html: post.descricao}}>
-                            
-                        </p>
+                        <div className="resumo">
 
-                        <Link to={'/blog/publicacao/'} href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </Link> 
+                              {post.resumo}
+                            
+                        </div>
+
+                        <Link to={'/blog/publicacao/' + post.id} href="#"> Saiba Mais <FaArrowRight></FaArrowRight>  </Link> 
                   </div>
                   </div>
 
             ))}   
+               
               {!statusLoading &&
+                        
                  <button onClick={ getAllPosts} className="seeMore">Ver Mais</button>
                }
 
               {statusLoading &&
                  <img className="loading" src={Loader} alt=""/>
                }
-                   
+
+                                 
                
                 
                 

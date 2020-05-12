@@ -13,7 +13,7 @@ export default function Routes(){
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={index}></Route>
-        <Route path="/blog/:id" component={viewpost}></Route>
+        <Route path="/blog/publicacao/:id" component={viewpost}></Route>
         <Route path="/blog" component={listpost}></Route>
        
       </Switch>

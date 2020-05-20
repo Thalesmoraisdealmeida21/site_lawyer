@@ -1,9 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
+import api from './../../service/api'
 import {FaLinkedin, FaInstagram, FaFacebook} from 'react-icons/fa'
 
 import './contact.css'
 export default function(){
 
+
+
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [assunto, setAssunto] = useState('');
+  const [mensagem, setMensagem] = useState('');
+  
+
+  function sendContact(){
+  
+
+    const data = {
+      nome,
+      email,
+      telefone,
+      assunto,
+      mensagem,
+
+    }
+
+    api.post('contato', data).then((res)=>{
+          if(res.status === 200){
+              alert("Recebemos sua mensagem, em breve estaremos retornando o contato !!");
+          } else {
+            alert("Ocorreu um erro ao transmitir sua mensagem");
+          }
+    }).catch((e)=>{
+          alert(`OCorreu um erro ao transmitir sua mensagem ${e.message}`)
+    })
+
+
+
+  }
 
   return(
 
@@ -18,22 +53,26 @@ export default function(){
 
 
                           <div className="formGroup">
-                              <input type="text"placeholder="Nome"/>
+                              <input value={nome} onChange={(e)=>{ setNome(e.target.value)}} type="text"placeholder="Nome"/>
                           </div>
 
                           <div className="formGroup">
-                              <input type="text"placeholder="Telefone"/>
+                              <input value={assunto} onChange={(e)=>{ setAssunto(e.target.value)}} type="text" placeholder="Assunto"/>
                           </div>
 
                           <div className="formGroup">
-                              <input type="text" className="input" placeholder="E-mail"/>
+                              <input value={telefone} onChange={(e)=>{ setTelefone(e.target.value)}} type="text"placeholder="Telefone"/>
+                          </div>
+
+                          <div className="formGroup">
+                              <input value={email} onChange={(e)=>{ setEmail(e.target.value)}} type="text" className="input" placeholder="E-mail"/>
                           </div>
                           <div className="formGroup">
-                          <textarea rows="5" placeholder="Diga o que você precisa"></textarea>
+                          <textarea value={mensagem} onChange={(e)=>{ setMensagem(e.target.value)}} rows="5" placeholder="Diga o que você precisa"></textarea>
                           </div>
 
                           <div className="containerButton">
-                            <button className="btnSubmit">Enviar Mensagem</button>
+                            <button onClick={sendContact} className="btnSubmit">Enviar Mensagem</button>
                           </div>
                     </form>
             </div>

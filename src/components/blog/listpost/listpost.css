@@ -49,6 +49,11 @@ a{
 
 }
 
+a{
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 
 
 .postItem img{

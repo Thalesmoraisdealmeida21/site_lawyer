@@ -57,11 +57,14 @@ export default function(){
 
             {posts.map(post => (
                   <div className="postItem">
+                  
+                  <Link to={'/blog/publicacao/' + post.id} href="#">
                   <img src={post.imgCapa} height="300vh" alt="Sem Imagem"/>
+                  </Link>
 
                   <div className="infoPost">
-                         <strong>{post.titulo}</strong>
-
+                  <Link to={'/blog/publicacao/' + post.id} href="#"> <strong>{post.titulo}</strong>
+                              </Link>
                         <div className="resumo">
 
                               {post.resumo}

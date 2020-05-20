@@ -95,7 +95,7 @@ export default function(){
           
 
             <div className="MiddleOfContacts">
-                 <FaPhone></FaPhone> Telefone: 55 996753805 | <FaEnvelope></FaEnvelope> E-mail: contato@priscilamorais.com
+                 <FaPhone></FaPhone> Telefone: 55 996753805 | <FaEnvelope></FaEnvelope> E-mail: pmorais.almeida@gmail.com
                  <br/>
                  <a className="endereco" href="https://www.google.com/maps?ll=-28.408279,-54.953942&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=5545425944403799854">
                     <FaMapMarked></FaMapMarked> Avenida Senador Pinheiro Machado, n 3000, Sala 02, São Luiz Gonzaga
@@ -122,7 +122,7 @@ export default function(){
                
                   
               </div>
-              <a className="btn-custom" href="https://api.whatsapp.com/send?phone=5555996753805&text=Ola%2C%20eu%20preciso%20de%20uma%20advogada%2C%20pode%20me%20ajudar">Chamar no Whatsapp</a>
+              <a className="btn-custom" href="https://api.whatsapp.com/send?phone=5555996753805&text=Olá%2C%20eu%20preciso%20de%20uma%20advogada%2C%20pode%20me%">Chamar no Whatsapp</a>
               
                 
             

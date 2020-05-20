@@ -6,9 +6,7 @@ import { useEffect } from 'react'
 export default function(){
 
   function toContact(){
-    let coord = document.querySelector('#sobre').getBoundingClientRect();
-    console.log(coord)
-    window.scrollTo(0, window.scrollY + coord.y)
+      window.location.href = "https://api.whatsapp.com/send?phone=5555996753805&text=Ola%2C%20eu%20preciso%20de%20uma%20advogada%2C%20pode%20me%20ajudar%20?"
   }
 
 

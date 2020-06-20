@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+   
 
-## Available Scripts
+</h1>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  Este é um site intitucional com template de advogado, que serve para apresentar uma marca e integrar com um sistema de CMS para psotagens de blog. A versão funcional pode ser acessada em 
+  <a href="priscilamorais.com">priscilamorais.com<a/>
+</p>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <a href="https://github.com/Thalesmoraisdealmeida21">
+    <img alt="Made by Thales Morais" src="https://img.shields.io/badge/Feito%20por-Thales%20Morais-brightgreen">
+  </a>
 
-### `npm run eject`
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/Thalesmoraisdealmeida21/ecoleta">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="./screenshot/print3.jpg" width="270" height="500" /> <img src="./screenshot/print2.jpg" width="270" height="500" />  <img src="./screenshot/print1.jpg" width="270" height="500" />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Sumario
 
-### Code Splitting
+<ul>
+  <li><a href="#-ponto-de-partida">Ponto de Partida</a></li>
+  <li><a href="#-funcionalidades-do-aplicativo">Funcionaldiades do Aplicativo</a></li>
+  <li><a href="#-funcionalidades-do-aplicativo">Tecnologias</a></li>
+  <li><a href="#Screenshots">Screenshots</a></li>
+</ul>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+## 🚀 Ponto de Partida
+Para rodar este aplicativo instale todas a suas dependências em cada pasta do projeto (web, sever, mobile) com o comando npm install.
+Execute o comando "npm run seed" para adicionar a lista de items pré cadastrada
+Após basta rodar o comando "npm start" em cada pasta
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+## 📋 Funcionalidades do Aplicativo
+Estas são as funcionalidades da aplicação em cada um dos ambientes (Web, Mobile)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Aplicação Web
+ - [x] Criação de pontos de coleta 
+ - [x] Upload de imagem do ponto de coleta
+ - [x] Seleção dos items coletáveis por este ponto
+ 
+### Aplicação Mobile
+ - [x] Listar pontos de coleta no mapa por cidade, uf e items coletaveis por aquele ponto
+ - [x] Acessar os dados do ponto de coleta clicando no icone do mapa
+ - [x] Entrar em contato por e-mail ou whatsapp
+
+
+
+
+### Tecnologias
+Foi utilizado para construção desta aplicação o react, react-native, node.js, Banco de Dados Postgre e bibliotecas de mapas leaflet e google maps 
+
+
+
+
+
+---
+## Screenshots
+---
+<img src="./screenshot/print4.png"/>
+<img src="./screenshot/print5.png" />
+<img src="./screenshot/print6.png"/> 

@@ -48,12 +48,7 @@ export default function(){
         </div>
 
         <div className="row">
-              <div className="card">
-                  <img src={DireitoIndenizatorio} alt=""/>
-                  <h2>Direito Indenizatório</h2>
-                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
-                  <a target="__blank" href="https://api.whatsapp.com/send?phone=5555996753805&text=Olá%2C%20preciso%20de%20ajuda%20com%20uma%20situa%C3%A7%C3%A3o%20sobre%20Direito%20Indenizat%C3%B3rio.%20Pode%20me%20ajudar%20%3F" className="btn-about btn-custom"> Entre em Contato </a>
-              </div>
+          
 
 
               <div className="card">
@@ -67,7 +62,8 @@ export default function(){
               <div className="card">
                   <img src={DireitoCivil} alt=""/>
                   <h2>Direito Civil</h2>
-                  <p>Override the digital divide with additional clickthroughs from DevOps along the information highway will close.</p>
+                  <p> Entre outras atividades que o escritório exerce na esfera do Direito Civil destaca-se, 
+                      assessoria, indenizações, danos morais e materiais, cobranças, entre outros.</p>
                   <a target="__blank" href="https://api.whatsapp.com/send?phone=5555996753805&text=Olá%2C%20preciso%20verificar%20uma%20situa%C3%A7%C3%A3o%20sobre%20Direito%20Indenizat%C3%B3rio.%20Pode%20me%20ajudar%20%3F" className="btn-about btn-custom"> Entre em Contato </a>
           
               </div>

@@ -36,9 +36,11 @@ export default function(){
 
 
         <img src={post.imgCapa} alt=""/>
-        <p dangerouslySetInnerHTML={{__html:  post.descricao}}>
-              
+        <div className="content-post">
+        <p dangerouslySetInnerHTML={{__html:  post.descricao}}> 
         </p>
+        </div>
+       
      
        
           

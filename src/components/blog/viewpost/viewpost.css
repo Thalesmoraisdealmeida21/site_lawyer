@@ -21,6 +21,13 @@
 
 
 
+.content-post p{
+  margin-right: 18px;
+  text-align: justify;
+}
+
+
+
 .pageTitle{
   padding: 20px;
   font-weight: bold;
@@ -79,5 +86,11 @@
       height: 60vw;
       width: 90%;
     }
+
+
     
+  }
+
+  @media (max-width: 800px){
+
   }

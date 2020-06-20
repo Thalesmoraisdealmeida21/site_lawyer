@@ -7,34 +7,47 @@ export default function(){
 
 
 
-  const [nome, setNome] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [telefone, setTelefone] = useState('');
-  const [assunto, setAssunto] = useState('');
-  const [mensagem, setMensagem] = useState('');
+  const [telephone, settelephone] = useState('');
+  const [subject, setsubject] = useState('');
+  const [message, setmessage] = useState('');
   
 
-  function sendContact(){
-  
+  function sendContact(e){
+      e.preventDefault();
 
     const data = {
-      nome,
+      to: "thales.morais21@gmail.com, pmorais.almeida@gmail.com",
+      from: "thalesmoraisdealmeida@outlook.com",
+      name,
       email,
-      telefone,
-      assunto,
-      mensagem,
-
+      telephone,
+      subject,
+      message,
     }
 
-    api.post('contato', data).then((res)=>{
-          if(res.status === 200){
-              alert("Recebemos sua mensagem, em breve estaremos retornando o contato !!");
-          } else {
-            alert("Ocorreu um erro ao transmitir sua mensagem");
-          }
-    }).catch((e)=>{
-          alert(`OCorreu um erro ao transmitir sua mensagem ${e.message}`)
-    })
+
+    if(!data.name){
+      alert("Digite seu nome para continuar")
+    }else {
+      if(!data.telephone){
+        alert("Digite seu telefone para continuar")
+      } else {
+        console.log(data);
+
+        api.post('sendmail', data).then((res)=>{
+              if(res.status === 200){
+                  alert("Recebemos sua mensagem, em breve estaremos retornando o contato !!");
+              } else {
+                alert("Ocorreu um erro ao transmitir sua mensagem");
+              }
+        }).catch((e)=>{
+              alert(`OCorreu um erro ao transmitir sua mensagem ${e.message}`)
+        })
+      }
+    }
+    
 
 
 
@@ -53,22 +66,22 @@ export default function(){
 
 
                           <div className="formGroup">
-                              <input value={nome} onChange={(e)=>{ setNome(e.target.value)}} type="text"placeholder="Nome"/>
+                              <input value={name} onChange={(e)=>{ setName(e.target.value)}} type="text"placeholder="Nome"/>
                           </div>
 
                           <div className="formGroup">
-                              <input value={assunto} onChange={(e)=>{ setAssunto(e.target.value)}} type="text" placeholder="Assunto"/>
+                              <input value={subject} onChange={(e)=>{ setsubject(e.target.value)}} type="text" placeholder="Assunto"/>
                           </div>
 
                           <div className="formGroup">
-                              <input value={telefone} onChange={(e)=>{ setTelefone(e.target.value)}} type="text"placeholder="Telefone"/>
+                              <input value={telephone} onChange={(e)=>{ settelephone(e.target.value)}} type="text"placeholder="Telefone"/>
                           </div>
 
                           <div className="formGroup">
                               <input value={email} onChange={(e)=>{ setEmail(e.target.value)}} type="text" className="input" placeholder="E-mail"/>
                           </div>
                           <div className="formGroup">
-                          <textarea value={mensagem} onChange={(e)=>{ setMensagem(e.target.value)}} rows="5" placeholder="Diga o que você precisa"></textarea>
+                          <textarea value={message} onChange={(e)=>{ setmessage(e.target.value)}} rows="5" placeholder="Diga o que você precisa"></textarea>
                           </div>
 
                           <div className="containerButton">

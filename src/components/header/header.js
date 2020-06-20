@@ -18,13 +18,13 @@ export default function(){
     if(locationRouter.pathname !== '/'){
         navigator.push('/', {page});
     } else {
-      window.scroll({       // 1
-        top: document
-      .querySelector(elementScroll)
-        .offsetTop,       // 2
-        left: 0,
- 
-        behavior: 'smooth'// 3
+     
+   
+     let distTop = document.querySelector(elementScroll).offsetTop;
+     window.scrollTo({
+       left: 0,
+       top: distTop - 150,
+       behavior: "smooth"
      });
     }
    

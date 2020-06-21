@@ -33,7 +33,6 @@
 
 <ul>
   <li><a href="#-ponto-de-partida">Ponto de Partida</a></li>
-  <li><a href="#-funcionalidades-do-aplicativo">Funcionaldiades do Aplicativo</a></li>
   <li><a href="#-funcionalidades-do-aplicativo">Tecnologias</a></li>
   <li><a href="#Screenshots">Screenshots</a></li>
 </ul>
@@ -61,6 +60,5 @@ Para a estilziação do site foi utilizado inteiramente HTML com CSS nenhum outr
 ---
 ## Screenshots
 ---
-<img src="./screenshot/livedemo.gif"/>
-<img src="./screenshot/print5.png" />
-<img src="./screenshot/print6.png"/> 
+<img width="100%" src="./screenshot/livedemo.gif"/>
+

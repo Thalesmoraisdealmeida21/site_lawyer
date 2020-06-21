@@ -61,6 +61,6 @@ Para a estilziação do site foi utilizado inteiramente HTML com CSS nenhum outr
 ---
 ## Screenshots
 ---
-<img src="./screenshot/print4.png"/>
+<img src="./screenshot/livedemo.gif"/>
 <img src="./screenshot/print5.png" />
 <img src="./screenshot/print6.png"/> 
